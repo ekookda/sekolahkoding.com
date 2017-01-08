@@ -25,32 +25,50 @@ form {
         margin: 20px 0;
     }
 
-    .form-register {
-            margin-bottom: 15px;
-        }
+.form-register {
+    margin-bottom: 15px;
+}
 
-        input[type="text"], input[type="password"], input[type="submit"] {
-                height: 15px;
-                    padding: 5px;
-                        font-size: 16px;
-                            border: 1px solid grey;
-                        }
+input[type="text"], input[type="password"], input[type="submit"] {
+    height: 15px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid grey;
+}
 
-                        input[type="submit"] {
-                                height: auto;
-                                    background: azure;
-                                }
+input[type="submit"] {
+    height: auto;
+    background: azure;
+}
 
-                                input[type="text"]:focus, input[type="password"]:focus {
-                                        border: 1px solid red;
-                                    }
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid red;
+}
 
-                                    input[type="submit"]:hover {
-                                            background: orange;
-                                                border: 1px solid orange;
-                                                    color: white;
-                                                }
+input[type="submit"]:hover {
+    background: orange;
+    border: 1px solid orange;
+    color: white;
+}
 
 nav {
+    margin-top: 15px;
+}
+
+.error {
+    background: red;
+    width: 150px;
+    padding: 5px;                
+    text-align: center;                
+    color: azure;                
+    margin-top: 15px;
+}
+
+.success {
+    background: green;
+    width: 150px;
+    padding: 5px;
+    text-align:center;
+    color: azure;
     margin-top: 15px;
 }

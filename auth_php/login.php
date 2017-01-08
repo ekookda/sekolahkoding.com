@@ -7,7 +7,16 @@ if(isset($_POST['btn-submit'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    validasi_login($username, $password);
+    if(cek_nama($username)){
+        if(validasi_login($username, $password)) {
+            echo '<div class="success">berhasil login</div>';
+        } else {
+            echo '<div class="error">gagal login</div>';
+        }
+    } else {
+        echo '<div class="error">username tidak ada</div>';
+    }
+
 }
 
 ?>

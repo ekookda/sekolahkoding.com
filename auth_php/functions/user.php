@@ -45,13 +45,27 @@
             $row = mysqli_fetch_assoc($exec);
             
             if(password_verify($pass, $row['password'])){
-                echo "Password is valid";
-                $_SESSION['user'] = $name;
+                return true;
             } else {
-                echo "Password is not valid";
+                return false;
             }
         else:
-            echo "Username ".$name." belum terdaftar";   
+            echo "Username belum terdaftar";   
         endif;
+    }
+
+    function cek_nama($nama) {
+        global $link;
+
+        $nama = mysqli_real_escape_string($link, $nama);
+
+        $query = "SELECT username FROM users WHERE username='$nama'"; 
+
+        $query = mysqli_query($link, $query);
+
+        if(mysqli_num_rows($query) == 1) {
+            $row = mysqli_fetch_assoc($query);
+            return true;      
+        } else { return false; }
     }
 ?>
