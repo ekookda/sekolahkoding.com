@@ -1,5 +1,4 @@
-# sekolahkoding-login-procedural
-Membuat Login dengan Prosedural
+# sekolahkoding
+kumpulan praktik dari tutorial sekolahkoding.com
 
-Tutorial by sekolahkoding.com
 # sekolahkoding
