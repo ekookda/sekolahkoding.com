@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: helvetica, sans-serif;
+}
+
+body {
+    width: 80%;
+    margin: 40px auto;
+}
+
+header {
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;
+    padding 20px;
+}
+
+footer {
+    border-top: 1px solid grey;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+form {
+        margin: 20px 0;
+    }
+
+    .form-register {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"], input[type="password"], input[type="submit"] {
+                height: 15px;
+                    padding: 5px;
+                        font-size: 16px;
+                            border: 1px solid grey;
+                        }
+
+                        input[type="submit"] {
+                                height: auto;
+                                    background: azure;
+                                }
+
+                                input[type="text"]:focus, input[type="password"]:focus {
+                                        border: 1px solid red;
+                                    }
+
+                                    input[type="submit"]:hover {
+                                            background: orange;
+                                                border: 1px solid orange;
+                                                    color: white;
+                                                }
+
+nav {
+    margin-top: 15px;
+}
